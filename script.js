@@ -40,13 +40,13 @@ console.log(promedio);
 /* Crear un conversor de medidas. Pedirle al usuario que ingrese una medida en metros y pasarlo a pies, centimetros y pulgadas. Mostrar por consola los tres resultados.*/
 let medidametro = parseInt(prompt("Ingrese medida en metros"));
 // Defino las constantes equivalentes a metros.
-const medidacentimetro = 0.01;
-const medidapies = 0.3048;
-const medidapulgadas = 0.0254;
+const medidacentimetro = 100;
+const medidapies = 3.281;
+const medidapulgadas = 39.37;
 // Convierto las medidas
-let centimetro = medidametro / medidacentimetro;
-let pies = medidametro / medidapies;
-let pulgadas = medidametro / medidapulgadas;
+let centimetro = medidametro * medidacentimetro;
+let pies = medidametro * medidapies;
+let pulgadas = medidametro * medidapulgadas;
 // Muestro las medidas convertidas
 console.log("Pies: " + pies);
 console.log("Centímetros: " + centimetro);
